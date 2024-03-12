@@ -1,0 +1,83 @@
+.lang-menu{
+    margin-top: 20px;
+    width: 170px;
+    position: relative;
+}
+
+.selected-lang {
+    cursor: pointer;
+    display: flex;
+    line-height: 45px;
+}
+
+.selected-lang:before {
+    content: '';
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-image: url(/data/images/en.png);
+    margin-right: 5px;
+}
+
+.lang-menu ul{
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    border: 1px solid #d7d0d0;
+    box-shadow: 0px 1px 10 px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    display: none;
+    position: absolute;
+    top: 40px;
+    right: 0;
+}
+
+.lang-menu ul li{
+    list-style: none;    
+    display: flex;
+    justify-content: space-between;
+}
+
+.lang-menu ul li a{
+    width: 200px;
+    display: flex;
+   padding: 3px 10px;
+   align-items: center;
+}
+
+.lang-menu ul li a:before{
+    content: '';
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+.lang-menu ul li a:hover{
+    background-color: #f2f2f2;
+}
+
+.en:before{
+    background-image: url(/data/images/en.png);
+}
+
+.ca:before{
+    background-image: url(/data/images/anunci_traduccio_icona.png);
+}
+
+.es:before{
+    background-image: url(/data/images/es.png);
+}
+
+.fr:before{
+    background-image: url(/data/images/fr.png);
+}
+
+.it:before{
+    background-image: url(/data/images/it.png);
+}
+
+.lang-menu:hover ul {
+    display: block;
+}
