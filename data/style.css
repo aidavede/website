@@ -1,13 +1,14 @@
 .lang-menu{
-    margin-top: 20px;
-    width: 170px;
+    margin-top: 10px;
+    width: 100px;
     position: relative;
+    z-index: 100000;
 }
 
 .selected-lang {
     cursor: pointer;
     display: flex;
-    line-height: 45px;
+    line-height: 30px;
 }
 
 .selected-lang:before {
@@ -28,7 +29,7 @@
     border-radius: 5px;
     display: none;
     position: absolute;
-    top: 40px;
+    top: 32px;
     right: 0;
 }
 
