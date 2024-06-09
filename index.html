@@ -1160,47 +1160,33 @@
                 <div class="padd-box-sm">
                   <header class="contact-head">
                   </header>
-                  <h3>Feel free to contact me in case of any question</h3>
-                  <p>Send me an email to: <a href="mailto:aida@aidavers.com" style="color: #89b2d3;">aida@aidavers.com</a></p>
-                  <!-- <div role="form" class="wpcf7" id="wpcf7-f46-p5-o1" lang="en-US" dir="ltr">
-                    <div class="screen-reader-response">
-                      <p role="status" aria-live="polite" aria-atomic="true"></p>
-                      <ul></ul>
-                    </div>
-                    <form action="https://certy.px-lab.com/designer/#wpcf7-f46-p5-o1" method="post"
-                      class="wpcf7-form init" novalidate="novalidate" data-status="init">
-                      <div style="display: none;">
-                        <input type="hidden" name="_wpcf7" value="46">
-                        <input type="hidden" name="_wpcf7_version" value="5.5.4">
-                        <input type="hidden" name="_wpcf7_locale" value="en_US">
-                        <input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f46-p5-o1">
-                        <input type="hidden" name="_wpcf7_container_post" value="5">
-                        <input type="hidden" name="_wpcf7_posted_data_hash" value="">
-                      </div>
-                      <p><label> Your Name (required)<br>
-                          <span class="wpcf7-form-control-wrap your-name"><input type="text" name="your-name" value=""
-                              size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required"
-                              aria-required="true" aria-invalid="false"></span> </label>
+                  <h3>Feel free to contact me in case of any question</h3>              
+                   <form action="/send-email" method="post">                    
+                      <div>                       
+                        <input type="hidden" name="server.js" value="5">
+                       </div>    
+                       <p><label for="Name"> Your Name<br>
+                        <span class="wpcf7-form-control-wrap your-name"><input type="text" id="name" name="name"
+                            value="" size="40"                            
+                            aria-required="true" aria-invalid="false" required></span> </label>
+                    </p>                  
+                      <p><label for="Email"> Your Email<br>
+                          <span class="wpcf7-form-control-wrap your-email"><input type="email" id="email" name="email"
+                              value="" size="40"                            
+                              aria-required="true" aria-invalid="false" required></span> </label>
                       </p>
-                      <p><label> Your Email (required)<br>
-                          <span class="wpcf7-form-control-wrap your-email"><input type="email" name="your-email"
-                              value="" size="40"
-                              class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email"
-                              aria-required="true" aria-invalid="false"></span> </label>
-                      </p>
-                      <p><label> Subject<br>
-                          <span class="wpcf7-form-control-wrap your-subject"><input type="text" name="your-subject"
-                              value="" size="40" class="wpcf7-form-control wpcf7-text" aria-invalid="false"></span>
+                      <p><label for="Subject"> Subject<br>
+                          <span class="wpcf7-form-control-wrap your-subject"><input type="text" id="subject" name="subject"
+                              value="" size="40" class="wpcf7-form-control wpcf7-text" aria-invalid="false" required></span>
                         </label></p>
-                      <p><label> Your Message<br>
-                          <span class="wpcf7-form-control-wrap your-message"><textarea name="your-message" cols="40"
+                      <p><label for="Message"> Your Message<br>
+                          <span class="wpcf7-form-control-wrap your-message"><textarea id="message" name="message" cols="40"
                               rows="10" class="wpcf7-form-control wpcf7-textarea"
-                              aria-invalid="false"></textarea></span> </label></p>
+                              aria-invalid="false" required></textarea></span> </label></p>
                       <p><input type="submit" value="Send" class="wpcf7-form-control has-spinner wpcf7-submit"><span
-                          class="wpcf7-spinner"></span></p>
-                      <div class="wpcf7-response-output" aria-hidden="true"></div>
-                    </form>
-                  </div> -->
+                          class="wpcf7-spinner"></span></p>                      
+                    </form>                   
+                  </div>
                 </div>
                     <div style="overflow: hidden;"></div>
                   </div>
