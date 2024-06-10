@@ -3,16 +3,48 @@ const nodemailer = require('nodemailer');
 const path = require('path');
 require('dotenv').config();
 
-const app = express();
+const i18next = require('i18next');
+const Backend = require('i18next-node-fs-backend');
+const i18nextMiddleware = require('i18next-express-middleware');
 
-require('dotenv').config();
+const APP_LANGUAGES = ['en', 'es', 'ca', 'it', 'fr'];
+
+const app = express();
+app.set('view engine', 'ejs');
+app.set('views', path.join(__dirname, 'views'));
+
+app.use(express.static(path.join(__dirname, 'public')));
 
 // Middleware to parse URL-encoded data
 app.use(express.urlencoded({ extended: false }));
 
-// Serve the HTML form
+i18next
+    .use(Backend)
+    .use(i18nextMiddleware.LanguageDetector)
+    .init({
+        backend: {
+            loadPath: __dirname + '/locales/{{lng}}/{{ns}}.json'
+        },
+        fallbackLng: 'en',
+        preload: APP_LANGUAGES
+    });
+
+app.use(i18nextMiddleware.handle(i18next));
+
+app.use('/:lang_code', (req, res, next) => {
+    const langCode = req.params.lang_code;
+
+    if (APP_LANGUAGES.includes(langCode)) {
+        req.i18n.changeLanguage(langCode);
+        //next();
+        res.render('index.html.ejs', { t: req.t, locale: req.locale });
+    } else {
+        res.status(404).render('404.html.ejs', { t: req.t, locale: req.locale });
+    }
+});
+
 app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, 'index.html'));
+    res.render('index.html.ejs', { t: req.t, locale: req.locale });
 });
 
 // Handle form submission and send email
