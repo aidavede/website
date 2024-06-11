@@ -703,28 +703,28 @@
           <div class="crt-head-row">
             <div id="crtHeadCol1" class="crt-head-col text-left">
               <a id="crtLogo" class="crt-logo" href="https://aidavers.com">
-                <span>Translator</span>
+                <span><%= t('translator') %></span>
               </a>
             </div>
                 <div class="lang-menu">
                   <div class="selected-lang">
-                  English
+                    <%= t('english') %>
                   </div>
                 <ul>
                   <li>
-                    <a class="en" href="/en">English</a>
+                    <a class="en" href="/en"><%= t('english') %></a>
                   </li>
                   <li>
-                    <a class="ca">Català</a>
+                    <a class="ca" href="/ca"><%= t('catalan') %></a>
                   </li>
                   <li>
-                    <a class="es" href="/es">Español</a>
+                    <a class="es" href="/es"><%= t('spanish') %></a>
                   </li>
                   <li>
-                    <a class="fr">Français</a>
+                    <a class="fr"><%= t('french') %></a>
                   </li>
                   <li>
-                    <a class="it">Italiano</a>
+                    <a class="it"><%= t('italian') %></a>
                   </li>
                 </ul>
             </div>
@@ -769,7 +769,7 @@
                 </div>
                 <div class="crt-card-info clear-mrg">
                   <h2 class="text-upper">Aida Vers</h2>
-                  <p class="text-muted">Translator</p>
+                  <p class="text-muted"><%= t('translator') %></p>
                 </div>
               </div>
             </aside>
@@ -827,12 +827,8 @@
               <section id="about" class="section padd-box brd-btm">
                 <div class="row">
                   <div class="col-sm-12 clear-mrg text-box">
-                    <h2 class="title-lg text-upper">Hello, I’m Aida!</h2>
-                    <p>I am a professional translator with a passion for bridging language barriers
-                      in various fields. With a keen interest in both computer science and
-                      literature, I specialize in translating a diverse range of content, from
-                      technical documents and software localization to literary works and dubbing
-                      scripts.</p>
+                    <h2 class="title-lg text-upper"> <%= t('greeting') %></h2>
+                    <p><%= t('introduction') %></p>
                     <div class="share-box text-left clearfix">
                       <!--<button class="share-btn btn btn-bordered btn-upper">
                         <span class="crt-icon crt-icon-share"></span>Share
@@ -846,25 +842,25 @@
               <section id="prof-skills" class="section padd-box brd-btm">
                 <div class="row">
                   <div class="col-sm-6 clear-mrg">
-                    <h3 class="title-thin text-muted">personal information</h3>
+                    <h3 class="title-thin text-muted"><%= t('title1') %></h3>
                     <dl class="dl-horizontal clear-mrg">
-                      <dt class="text-upper">Full Name</dt>
+                      <dt class="text-upper"><%= t('full-name') %></dt>
                       <dd>Aida Vers Delgado</dd>
-                      <dt class="text-upper">D.o.b.</dt>
-                      <dd>07 Nov 2001</dd>
-                      <dt class="text-upper">e-mail</dt>
+                      <dt class="text-upper"><%= t('dob') %></dt>
+                      <dd><%= t('birth') %></dd>
+                      <dt class="text-upper"><%= t('mail') %></dt>
                       <dd>aida@aidavers.com</dd>
-                      <dt class="text-upper">phone</dt>
+                      <dt class="text-upper"><%= t('phone') %></dt>
                       <dd>+34 618 03 55 48</dd>
-                      <dt class="text-upper">freelance</dt>
-                      <dd>Available</dd>
+                      <dt class="text-upper"><%= t('freelance') %></dt>
+                      <dd><%= t('available') %></dd>
                     </dl>
                   </div>
                   <div class="col-sm-6 clear-mrg">
-                    <h3 class="title-thin text-muted">languages</h3>
+                    <h3 class="title-thin text-muted"><%= t('title2') %></h3>
                     <div class="progress-bullets crt-animated" role="progressbar" aria-valuenow="97" aria-valuemin="0"
                       aria-valuemax="10">
-                      <strong class="progress-title">Spanish</strong>
+                      <strong class="progress-title"><%= t('spanish') %></strong>
                       <span class="progress-bar">
                         <span class="bullet fill"></span>
                         <span class="bullet fill"></span>
@@ -877,11 +873,11 @@
                         <span class="bullet fill"></span>
                         <span class="bullet fill"></span>
                       </span>
-                      <span class="progress-text text-muted">native</span>
+                      <span class="progress-text text-muted"><%= t('native') %></span>
                     </div>
                     <div class="progress-bullets crt-animated" role="progressbar" aria-valuenow="97" aria-valuemin="0"
                       aria-valuemax="10">
-                      <strong class="progress-title">Catalan</strong>
+                      <strong class="progress-title"><%= t('catalan') %></strong>
                       <span class="progress-bar">
                         <span class="bullet fill"></span>
                         <span class="bullet fill"></span>
@@ -894,11 +890,11 @@
                         <span class="bullet fill"></span>
                         <span class="bullet fill"></span>
                       </span>
-                      <span class="progress-text text-muted">native</span>
+                      <span class="progress-text text-muted"><%= t('native') %></span>
                     </div>
                     <div class="progress-bullets crt-animated" role="progressbar" aria-valuenow="97" aria-valuemin="0"
                       aria-valuemax="10">
-                      <strong class="progress-title">French</strong>
+                      <strong class="progress-title"><%= t('french') %></strong>
                       <span class="progress-bar">
                         <span class="bullet fill"></span>
                         <span class="bullet fill"></span>
@@ -911,11 +907,11 @@
                         <span class="bullet fill"></span>
                         <span class="bullet"></span>
                       </span>
-                      <span class="progress-text text-muted">fluent</span>
+                      <span class="progress-text text-muted"><%= t('fluent') %></span>
                     </div>
                     <div class="progress-bullets crt-animated" role="progressbar" aria-valuenow="97" aria-valuemin="0"
                       aria-valuemax="10">
-                      <strong class="progress-title">English</strong>
+                      <strong class="progress-title"><%= t('english') %></strong>
                       <span class="progress-bar">
                         <span class="bullet fill"></span>
                         <span class="bullet fill"></span>
@@ -928,11 +924,11 @@
                         <span class="bullet fill"></span>
                         <span class="bullet"></span>
                       </span>
-                      <span class="progress-text text-muted">fluent</span>
+                      <span class="progress-text text-muted"><%= t('fluent') %></span>
                     </div>
                     <div class="progress-bullets crt-animated" role="progressbar" aria-valuenow="37" aria-valuemin="0"
                       aria-valuemax="10">
-                      <strong class="progress-title">Italian</strong>
+                      <strong class="progress-title"><%= t('italian') %></strong>
                       <span class="progress-bar">
                         <span class="bullet fill"></span>
                         <span class="bullet fill"></span>
@@ -945,7 +941,7 @@
                         <span class="bullet"></span>
                         <span class="bullet"></span>
                       </span>
-                      <span class="progress-text text-muted">proficient</span>
+                      <span class="progress-text text-muted"><%= t('proficient') %></span>
                     </div>
                   </div>
                 </div>
@@ -954,37 +950,37 @@
               <section id="skills" class="section padd-box brd-btm">
                 <div class="row">
                   <div class="col-sm-6 clear-mrg">
-                    <h3 class="title-thin text-muted">professional skills</h3>
+                    <h3 class="title-thin text-muted"><%= t('title3') %></h3>
                     <div class="progress-line crt-animate" role="progressbar" aria-valuenow="95" aria-valuemin="0"
                     aria-valuemax="100">
-                    <strong class="progress-title">Literary Translation</strong>
+                    <strong class="progress-title"><%= t('literary') %></strong>
                     <div class="progress-bar" data-text="95%" data-value="0.95"></div>
                   </div>
                     <div class="progress-line crt-animate" role="progressbar" aria-valuenow="75" aria-valuemin="0"
                       aria-valuemax="100">
-                      <strong class="progress-title">Subtitling and Dubbing</strong>
+                      <strong class="progress-title"><%= t('subtitling') %></strong>
                       <div class="progress-bar" data-text="75%" data-value="0.75"></div>
                     </div>
                     <div class="progress-line crt-animate" role="progressbar" aria-valuenow="85" aria-valuemin="0"
                       aria-valuemax="100">
-                      <strong class="progress-title">Technical translation</strong>
+                      <strong class="progress-title"><%= t('technical') %></strong>
                       <div class="progress-bar" data-text="85%" data-value="0.85"></div>
                     </div>
                     <div class="progress-line crt-animate" role="progressbar" aria-valuenow="95" aria-valuemin="0"
                       aria-valuemax="100">
-                      <strong class="progress-title">Localization</strong>
+                      <strong class="progress-title"><%= t('localization') %></strong>
                       <div class="progress-bar" data-text="95%" data-value="0.95"></div>
                     </div>
                   </div>
                   <div class="col-sm-6 clear-mrg">
-                    <h3 class="title-thin text-muted">additional skills</h3>
+                    <h3 class="title-thin text-muted"><%= t('title4') %></h3>
                     <div class="row">
                       <div class="col-xs-4 text-center">
                         <div class="progress-chart crt-animate" role="progressbar" aria-valuenow="100"
                           aria-valuemin="0" aria-valuemax="100">
                           <div class="progress-bar" data-text="100%" data-value="1" style="position: relative;">
                           </div>
-                          <strong class="progress-title">Attention to Detail</strong>
+                          <strong class="progress-title"><%= t('detail') %></strong>
                         </div>
                       </div>
                       <div class="col-xs-4 text-center">
@@ -992,7 +988,7 @@
                           aria-valuemin="0" aria-valuemax="100">
                           <div class="progress-bar" data-text="100%" data-value="1" style="position: relative;">
                           </div>
-                          <strong class="progress-title">Cultural Competence</strong>
+                          <strong class="progress-title"><%= t('cultural') %></strong>
                         </div>
                       </div>
                       <div class="col-xs-4 text-center">
@@ -1000,7 +996,7 @@
                           aria-valuemin="0" aria-valuemax="100">
                           <div class="progress-bar" data-text="100%" data-value="1" style="position: relative;">
                           </div>
-                          <strong class="progress-title">Time Management</strong>
+                          <strong class="progress-title"><%= t('time') %></strong>
                         </div>
                       </div>
                     </div>
@@ -1010,13 +1006,13 @@
               <section id="data" class="section padd-box">
                 <div class="row">
                   <div class="col-sm-6 clear-mrg">
-                    <h3 class="title-thin text-muted">styled list</h3>
+                    <h3 class="title-thin text-muted"><%= t('title5') %></h3>
                     <ul class="styled-list clear-mrg">
-                      <li>Diverse Translation Services</li>
-                      <li>Expertise and Specialization</li>
-                      <li>Professional Skills</li>
-                      <li>Self-Motivated Approach</li>
-                      <li>Commitment to Quality</li>
+                      <li><%= t('services') %></li>
+                      <li><%= t('specialization') %></li>
+                      <li><%= t('skills') %></li>
+                      <li><%= t('motivation') %></li>
+                      <li><%= t('quality') %></li>
                     </ul>
                   </div>
                 </div>
@@ -1028,14 +1024,14 @@
           <div class="crt-paper clear-mrg clearfix">
             <div class="crt-paper-cont paper-padd clear-mrg">
               <section id="exp" class="section padd-box brd-btm">
-                <h2 class="title-lg text-upper">work experience</h2>
+                <h2 class="title-lg text-upper"><%= t('title6') %></h2>
                 <div class="education">
                   <div class="education-box">
                     <span class="education-date">
                       <span>2019 - 2024</span>
                     </span>
                     <h3>
-                      Teacher </h3>
+                      <%= t('teacher') %></h3>
                       <a href="https://montsedelgado.cat">
                     <span class="education-company">Montse Delgado, Centre de Reforç Escolar</span></a>
                   </div>
@@ -1044,7 +1040,7 @@
                       <span>2021-2024</span>
                     </span>
                     <h3>
-                      Translator </h3>
+                      <%= t('translator') %> </h3>
                       <a href="https://montsedelgado.cat">
                       <span class="education-company">Montse Delgado, Centre de Reforç Escolar</span></a>
                     </a>
@@ -1054,7 +1050,7 @@
                       <span>2022-2024</span>
                     </span>
                     <h3>
-                      Proofreader </h3>
+                      <%= t('proofreader') %></h3>
                       <a href="https://montsedelgado.cat">
                       <span class="education-company">Montse Delgado, Centre de Reforç Escolar</span></a>
                     </a>
@@ -1064,14 +1060,14 @@
                       <span>2022</span>
                     </span>
                     <h3>
-                      Translator </h3>
+                      <%= t('translator') %> </h3>
                       <a href="https://github.com/royalmo/itic-copilot">
-                    <span class="education-company">iTIC Copilot extension</span></a>
+                    <span class="education-company"><%= t('itic') %></span></a>
                   </div>
                 </div>
               </section>
               <section id="timeline" class="section padd-box">
-                <h2 class="title-lg text-upper">Education</h2>
+                <h2 class="title-lg text-upper"><%= t('title7') %></h2>
                 <div class="education">
                   <div class="education-box">
                     <span class="education-date">
@@ -1101,8 +1097,7 @@
                     </h3>
                     <a
                       href="https://www.uab.cat/web/estudiar/ehea-degrees/general-information-1216708259085.html?param1=1228291018508">
-                      <span class="education-company">Bachelor's Degree in Translation and
-                        Interpreting</span>
+                      <span class="education-company"><%= t('degree') %></span>
                     </a>
                 </div>
               </section>
@@ -1117,31 +1112,31 @@
                 <div class="row">
                   
                   <div class="col-sm-12 clear-mrg">
-                    <h2 class="title-lg text-upper">Interests</h2>
+                    <h2 class="title-lg text-upper"><%= t('title8') %></h2>
                     <ul class="crt-icon-list crt-icon-list-col3 clearfix">
                       <li>
                         <img alt="Book Icon" src="/data/images/book.png">
-                        Reading
+                        <%= t('reading') %>
                       </li>
                       <li>
                         <img alt="Notes Icon" src="/data/images/music.png">
-                        Music
+                        <%= t('music') %>
                       </li>
                       <li>
                         <img alt="Game console Icon" src="/data/images/game.png">
-                        Video games
+                        <%= t('games') %>
                       </li>
                       <li>
                         <img alt="Cat Icon" src="/data/images/cat.png">
-                        Cats
+                        <%= t('cats') %>
                       </li>
                       <li>
                         <img alt="Plane Icon" src="/data/images/plane.png">
-                        Travel
+                        <%= t('travel') %>
                       </li>
                       <li>
                         <img alt="Theatre Icon" src="/data/images/theatre.png">
-                        Theatre
+                        <%= t('theatre') %>
                       </li>
                     </ul>
                   </div>
@@ -1154,30 +1149,30 @@
           <div class="crt-paper clear-mrg clearfix">
             <div class="crt-paper-cont paper-padd clear-mrg">
               <section id="contact" class="section padd-box">
-                <h2 class="title-lg text-upper">Contact Me</h2>
+                <h2 class="title-lg text-upper"><%= t('title9') %></h2>
                 <div class="padd-box-sm">
                   <header class="contact-head">
                   </header>
-                  <h3>Feel free to contact me in case of any question</h3>              
+                  <h3><%= t('contact') %></h3>              
                    <form action="/send-email" method="post">                    
                       <div>                       
                         <input type="hidden" name="server.js" value="5">
                        </div>    
-                       <p><label for="Name"> Your Name<br>
+                       <p><label for="Name"> <%= t('name') %><br>
                         <span class="wpcf7-form-control-wrap your-name"><input type="text" id="name" name="name"
                             value="" size="40"                            
                             aria-required="true" aria-invalid="false" required></span> </label>
                     </p>                  
-                      <p><label for="Email"> Your Email<br>
+                      <p><label for="Email"> <%= t('email') %><br>
                           <span class="wpcf7-form-control-wrap your-email"><input type="email" id="email" name="email"
                               value="" size="40"                            
                               aria-required="true" aria-invalid="false" required></span> </label>
                       </p>
-                      <p><label for="Subject"> Subject<br>
+                      <p><label for="Subject"> <%= t('subject') %><br>
                           <span class="wpcf7-form-control-wrap your-subject"><input type="text" id="subject" name="subject"
                               value="" size="40" class="wpcf7-form-control wpcf7-text" aria-invalid="false" required></span>
                         </label></p>
-                      <p><label for="Message"> Your Message<br>
+                      <p><label for="Message"><%= t('message') %><br>
                           <span class="wpcf7-form-control-wrap your-message"><textarea id="message" name="message" cols="40"
                               rows="10" class="wpcf7-form-control wpcf7-textarea"
                               aria-invalid="false" required></textarea></span> </label></p>
