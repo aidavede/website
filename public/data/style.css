@@ -1,6 +1,6 @@
 .lang-menu{
     margin-top: 10px;
-    width: 100px;
+    width: 1.3rem;
     position: relative;
     z-index: 100000;
 }
@@ -11,13 +11,19 @@
     line-height: 30px;
 }
 
-.selected-lang:before {
+.selected-lang>span{
+    display:flex;
+    padding-left:0.5rem;
+}
+
+.selected-lang>span:before {
     content: '';
     display: block;
     width: 30px;
     height: 30px;
-    background-image: url(/data/images/en.png);
-    margin-right: 5px;
+    position: relative;
+    left:-10px;
+    background-image: url(/data/images/lng.png);
 }
 
 .lang-menu ul{
@@ -30,7 +36,7 @@
     display: none;
     position: absolute;
     top: 32px;
-    right: 0;
+    left: 0rem;
 }
 
 .lang-menu ul li{

@@ -31,7 +31,7 @@ i18next
 
 app.use(i18nextMiddleware.handle(i18next));
 
-app.use('/:lang_code', (req, res, next) => {
+app.get('/:lang_code', (req, res, next) => {
     const langCode = req.params.lang_code;
 
     if (APP_LANGUAGES.includes(langCode)) {
@@ -84,7 +84,11 @@ app.post('/send-email', (req, res) => {
     });
 });
 
-// Start the server
+// 404 not found
+app.get('*', function(req, res){
+    res.status(404).render('404.html.ejs', { t: req.t, locale: req.locale });
+});
+
 const port = process.env.PORT || 3000;
 app.listen(port, () => {
     console.log(`Server started on port ${port}...`);

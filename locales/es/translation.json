@@ -57,5 +57,7 @@
     "about": "Acerca de mí",
     "exp": "Experiencia",
     "cntc": "Contacto",
-    "send": "Enviar"
+    "send": "Enviar",
+    "language": "Idioma",
+    "error": "Error"
 }
