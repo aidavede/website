@@ -274,9 +274,9 @@
       font-size: var(--wp--preset--font-size--x-large) !important;
     }
   </style>
-  <link rel="stylesheet" id="Quicksand-css" href="/data/css"
+  <link rel="stylesheet" id="Quicksand-css" href="/data/css1.css"
     type="text/css" media="all">
-  <link rel="stylesheet" id="Pacifico-css" href="/data/css(1)"
+  <link rel="stylesheet" id="Pacifico-css" href="/data/css2.css"
     type="text/css" media="all">
   <link rel="stylesheet" id="certy-styles-css"
     href="/data/style(1).min.css" type="text/css" media="all">
@@ -1133,7 +1133,7 @@
                         jQuery('#emailForm').on('submit', function(event) {
                               event.preventDefault();
                               sendbutton = jQuery('#send_button');
-                              sendbutton.disable().text('Enviant ...');              
+                              sendbutton.prop("disabled",true).text('Enviant ...');              
                               jQuery.ajax({
                                   url: jQuery(this).attr('action'),
                                   type: 'POST',
@@ -1144,7 +1144,7 @@
                                   },
                                   error: function(jqXHR, textStatus, errorThrown) {
                                     jQuery('#form_ko').fadeIn();
-                                    sendbutton.enable().text("<%= t('send') %>");
+                                    sendbutton.prop("disabled",false).text("<%= t('send') %>");
                                   }
                               });
                           });
