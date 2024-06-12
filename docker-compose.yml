@@ -1,0 +1,11 @@
+version: '3.3'
+
+services:
+  aidavers_com:
+    build: .
+    ports:
+      - "3551:3000"
+    env_file:
+      - .env
+    environment:
+      - NODE_ENV=production
