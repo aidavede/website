@@ -653,7 +653,7 @@
               </a>
             </div>
                 <div class="lang-menu">
-                  <div class="selected-lang">
+                  <div class="selected-lang" onclick="jQuery('.lang-menu').toggleClass('click')">
                     <span><%= t('language') %></span>
                   </div>
                   <ul>
@@ -682,7 +682,7 @@
           </div>
         </div>
       </div>
-      <nav id="crtNavSm" class="crt-nav hidden-lg hidden-md">
+      <!-- <nav id="crtNavSm" class="crt-nav hidden-lg hidden-md">
         <div class="crt-avatar">
           <a href="#about" data-tooltip="About me">
             <img alt="" src="/data/images/orla_square.jpg" class="avatar avatar-42"> </a>
@@ -698,7 +698,7 @@
                 class="crt-icon crt-icon-contact"></span></a>
           </li>
         </ul>
-      </nav>
+      </nav> -->
     </header>
     <div id="crtContainer" class="crt-container">
       <div id="crtSideBoxWrap">
@@ -708,7 +708,10 @@
                 <div class="crt-card-avatar">
                   <span class="crt-avatar-state">
                     <span class="crt-avatar-state1">
-                      <img class="avatar avatar-12" alt="" src="/data/images/orla.jpg">
+                      <picture>
+                        <source srcset="/data/images/orla_square.jpg" media="(max-width: 991px)">
+                        <img class="avatar avatar-12" id="orla_pic" alt="Aida" src="/data/images/orla.jpg">
+                      </picture>                      
                     </span>
                   </span>
                 </div>
