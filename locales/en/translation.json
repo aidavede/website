@@ -28,7 +28,7 @@
     "detail": "Attention to Detail",
     "cultural": "Cultural Competence",
     "time": "Time Management",
-    "title5": "styled list",
+    "title5": "main strengths",
     "services": "Diverse Translation Services",
     "specialization": "Expertise and Specialization",
     "skills": "Professional Skills",
@@ -39,6 +39,7 @@
     "proofreader": "Proofreader",
     "itic": "iTIC Copilot extension",
     "title7": "Education",
+    "batxibac": "Batxibac humanistic",
     "degree": "Bachelor's Degree in Translation and Interpreting",
     "title8": "Interests",
     "reading": "Reading",
@@ -52,6 +53,10 @@
     "name": "Your Name",
     "email": "Your Email",
     "subject": "Subject",
-    "message": "Your Message"
+    "message": "Your Message",
+    "about": "About me",
+    "exp": "Experience",
+    "cntc": "Contact",
+    "send": "Send"
 
 }

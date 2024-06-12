@@ -783,13 +783,13 @@
             <div id="crtNavScroll">
               <nav id="crtNav" class="crt-nav">
                 <div class="crt-nav-img current">
-                  <a href="https://aidavers.com/#about" data-tooltip="About me">
+                  <a href="https://aidavers.com/#about" data-tooltip="<%= t('about') %>">
                     <img alt="" src="/data/images/orla.jpg" class="avatar avatar-10"> </a>
                 </div>
                 <ul class="clear-list">
                   <li
                     class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-41">
-                    <a href="https://aidavers.com/#exp" data-tooltip="Experience">
+                    <a href="https://aidavers.com/#exp" data-tooltip="<%= t('exp') %>">
                      <div style="padding-top: 20px;">
                       <img alt="Briefcase" src="/data/images/briefcase.png" style="width: 35px; height: 35px;">
                     </div>
@@ -797,7 +797,7 @@
                   </li>
                   <li
                     class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-43">
-                    <a href="https://aidavers.com/#interests" data-tooltip="Interests">
+                    <a href="https://aidavers.com/#interests" data-tooltip="<%= t('title8') %>">
                       <div style="padding-top: 20px;">
                       <img alt="Mail" src="/data/images/heart.png" style="width: 35px; height: 35px;">
                       </div>
@@ -805,7 +805,7 @@
                   </li>
                   <li
                     class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-43">
-                    <a href="https://aidavers.com/#contact" data-tooltip="Contact">
+                    <a href="https://aidavers.com/#contact" data-tooltip="<%= t('cntc') %>">
                       <div style="padding-top: 20px;">
                       <img alt="Mail" src="/data/images/mail.png" style="width: 35px; height: 35px;">
                       </div>
@@ -1078,7 +1078,7 @@
                         Institut Gerbert d'Aurillac </a>
                     </h3>
                     <a href="https://agora.xtec.cat/iesgerbert/estudis-2/batxibac/">
-                      <span class="education-company">Batxibac humanistic</span>
+                      <span class="education-company"><%= t('batxibac') %></span>
                     </a>
                     <div class="at-above-post-homepage addthis_tool"
                       data-url="https://certy.px-lab.com/designer/certy_timeline/design-university/">
@@ -1153,7 +1153,7 @@
                 <div class="padd-box-sm">
                   <header class="contact-head">
                   </header>
-                  <h3><%= t('contact') %></h3>              
+                  <h3><%= t('contact') %></h3><br>              
                    <form action="/send-email" method="post">                    
                       <div>                       
                         <input type="hidden" name="server.js" value="5">
@@ -1176,7 +1176,7 @@
                           <span class="wpcf7-form-control-wrap your-message"><textarea id="message" name="message" cols="40"
                               rows="10" class="wpcf7-form-control wpcf7-textarea"
                               aria-invalid="false" required></textarea></span> </label></p>
-                      <p><input type="submit" value="Send" class="wpcf7-form-control has-spinner wpcf7-submit"><span
+                      <p><input type="submit" value="<%= t('send') %>" class="wpcf7-form-control has-spinner wpcf7-submit"><span
                           class="wpcf7-spinner"></span></p>                      
                     </form>                   
                   </div>
