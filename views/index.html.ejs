@@ -203,7 +203,7 @@
               <section id="prof-skills" class="section padd-box brd-btm">
                 <div class="row">
                   <div class="col-sm-6 clear-mrg">
-                    <h3 class="title-thin text-muted"><%= t('title1') %></h3>
+                    <h3 class="title-thin text-muted"><%= t('title/personal-information') %></h3>
                     <dl class="dl-horizontal clear-mrg">
                       <dt class="text-upper"><%= t('full-name') %></dt>
                       <dd>Aida Vers Delgado</dd>
@@ -222,7 +222,7 @@
                     </dl>
                   </div>
                   <div class="col-sm-6 clear-mrg">
-                    <h3 class="title-thin text-muted"><%= t('title2') %></h3>
+                    <h3 class="title-thin text-muted"><%= t('title/languages') %></h3>
                     <div class="progress-bullets crt-animated" role="progressbar" aria-valuenow="97" aria-valuemin="0"
                       aria-valuemax="10">
                       <strong class="progress-title"><%= t('spanish') %></strong>
@@ -315,7 +315,7 @@
               <section id="skills" class="section padd-box brd-btm">
                 <div class="row">
                   <div class="col-sm-6 clear-mrg">
-                    <h3 class="title-thin text-muted"><%= t('title3') %></h3>
+                    <h3 class="title-thin text-muted"><%= t('title/professional-skills') %></h3>
                     <div class="progress-line crt-animate" role="progressbar" aria-valuenow="95" aria-valuemin="0"
                     aria-valuemax="100">
                     <strong class="progress-title"><%= t('literary') %></strong>
@@ -338,7 +338,7 @@
                     </div>
                   </div>
                   <div class="col-sm-6 clear-mrg">
-                    <h3 class="title-thin text-muted"><%= t('title4') %></h3>
+                    <h3 class="title-thin text-muted"><%= t('title/additional-skills') %></h3>
                     <div class="row">
                       <div class="col-xs-4 text-center">
                         <div class="progress-chart crt-animate" role="progressbar" aria-valuenow="100"
@@ -371,7 +371,7 @@
               <section id="data" class="section padd-box">
                 <div class="row">
                   <div class="col-sm-6 clear-mrg">
-                    <h3 class="title-thin text-muted"><%= t('title5') %></h3>
+                    <h3 class="title-thin text-muted"><%= t('title/main-strengths') %></h3>
                     <ul class="styled-list clear-mrg">
                       <li><%= t('services') %></li>
                       <li><%= t('specialization') %></li>
@@ -389,7 +389,7 @@
           <div class="crt-paper clear-mrg clearfix">
             <div class="crt-paper-cont paper-padd clear-mrg">
               <section id="exp" class="section padd-box brd-btm">
-                <h2 class="title-lg text-upper"><%= t('title6') %></h2>
+                <h2 class="title-lg text-upper"><%= t('title/work-experience') %></h2>
                 <div class="education">
                   <div class="education-box">
                     <span class="education-date">
@@ -423,7 +423,7 @@
                 </div>
               </section>
               <section id="timeline" class="section padd-box brd-btm">
-                <h2 class="title-lg text-upper"><%= t('title7') %></h2>
+                <h2 class="title-lg text-upper"><%= t('title/education') %></h2>
                 <div class="education">
                   <div class="education-box">
                     <span class="education-date">
@@ -453,29 +453,35 @@
               </section>
               <br>
               <section id="projects" class="section padd-box">
-                <h2 class="title-lg text-upper"><%= t('title8') %></h2>
+                <h2 class="title-lg text-upper"><%= t('title/projects') %></h2>
                 <div class="project">
                   <div class="project">
+                    <div class="ref-box brd-btm">                      
                     <h3 class="title-thin text-muted"><%= t('itic') %></h3>
-                      <p><strong>Description:</strong> Translated the Itic Copilot extension [blah blah].</p>
+                    <img alt="iTic" src="/data/images/itic.jpg" style="width: 9rem; height: 15rem;"><br><br>
+                      <p><strong>Description:</strong> I translated and proofread the iTIC Copilot extension into Catalan, English, Spanish, French, and Italian. This extension, designed for ICT Systems students at EPSEM, enhances productivity with features like anti-downloader tools for OCW, autologin for Atenea, and more.</p>
                       <p><strong>Technologies Used:</strong> HTML </p>
-                      <p><strong>Languages:</strong> Spanish, English, Catalan, French, Italian</p>
+                      <p><strong>Languages:</strong> Catalan, Spanish, English, French, Italian</p>
                       <p><strong>Link:</strong> <a href="https://github.com/royalmo/itic-copilot">Check it out!</a></p>
+                    </div>
                   </div>
                   <br>
-                  <h3 class="title-thin text-muted">Website Creation and Translation</h3>                  
-                  <p><strong>Description:</strong> Designed, developed, and translated a personal website to showcase translation services and professional skills.</p>
+                  <div class="ref-box brd-btm">
+                  <h3 class="title-thin text-muted">Website Creation and Localization</h3>        
+                  <img alt="Website" src="/data/images/language.jpg" style="width: 8rem; height: 3rem;"><br><br>          
+                  <p><strong>Description:</strong> I conceived, designed, developed and localized my personal website. Combining creativity with technical expertise, I crafted a  platform that showcases my translation services while ensuring seamless navigation and accessibility across multiple languages</p>
                   <p><strong>Technologies Used:</strong> HTML, CSS, JavaScript</p>
-                  <p><strong>Languages:</strong> Spanish, English, Catalan, French, Italian</p>
+                  <p><strong>Languages:</strong> Catalan, Spanish, English, French, Italian</p>
               </div>
               <br>
               <br>              
-              <div class="project">
+              <div class="ref-box">
                 <h3 class="title-thin text-muted">TFG: Literary Translation of a Children's Magazine</h3>
-                  <p><strong>Description:</strong> Completed a final degree project at the Universitat Autònoma de Barcelona, involving the literary translation of a children's magazine from French to Catalan. [blah blah]. </p>
-                  <p><strong>Source Material:</strong> Bayard Children's Magazine (Mes premiers J'aime lire: Drôle de directeur)</p>
+                <img alt="Magazine" src="/data/images/Bayard.jpg" style="width: 9,5rem; height: 14rem;"><br><br>
+                  <p><strong>Description:</strong> For my bachelor thesis at UAB,I translated the children's magazine "Mes premiers J'aime lire: Drôle de directeur!" from French to Catalan. This project involved carefully adapting the magazine's stories and educational content to maintain their appeal and accuracy for young Catalan-speaking readers. </p>
+                  <p><strong>Source Material:</strong> "Mes premiers J'aime lire: Drôle de directeur!" by Bayard.</p>
                   <p><strong>Languages:</strong> French to Catalan</p>
-                  <p><strong>Link:</strong> <a href="http://tfgurl.com" target="_blank">Link futur</a></p>
+                  <p><strong>Link:</strong> <a href="http://tfgurl.com" target="_blank">Not available (yet)</a></p>
               </div>
               </section>              
             </div>
@@ -489,7 +495,7 @@
                 <div class="row">
                   
                   <div class="col-sm-12 clear-mrg">
-                    <h2 class="title-lg text-upper"><%= t('title9') %></h2>
+                    <h2 class="title-lg text-upper"><%= t('title/interests') %></h2>
                     <ul class="crt-icon-list crt-icon-list-col3 clearfix">
                       <li>
                         <img alt="Book Icon" src="/data/images/book.png">
@@ -526,7 +532,7 @@
           <div class="crt-paper clear-mrg clearfix">
             <div class="crt-paper-cont paper-padd clear-mrg">
               <section id="contact" class="section padd-box">
-                <h2 class="title-lg text-upper"><%= t('title10') %></h2>
+                <h2 class="title-lg text-upper"><%= t('title/contact') %></h2>
                 <div class="padd-box-sm">
                   <header class="contact-head">
                   </header>
@@ -580,8 +586,9 @@
                   </script>                  
                   </div>
                   <div class="social-icons" style="text-align: center;">   
-                    <a style="margin-left: 0.15rem;" href="https://www.linkedin.com/in/aida-vers-delgado-a33520241/"><img alt="LinkedIn" src="/data/images/linkedin1.png"></a>
-                    <a style="margin-left: 0.15rem;" href="https://github.com/aidavede/"><img alt="GitHub" src="/data/images/github1.png"></a>         
+                    <a style="margin-left: 0.15rem;" href="https://www.linkedin.com/in/aida-vers-delgado-a33520241/"><img alt="LinkedIn" src="/data/images/linkedin.png"></a>
+                    <a style="margin-left: 0.15rem;" href="https://github.com/aidavede/"><img alt="GitHub" src="/data/images/github.png"></a>
+                    <a style="margin-left: 0.15rem;" href="..."><img alt="LinkedIn" src="/data/images/email.png"></a>         
                   </div>
                 </div>
 
