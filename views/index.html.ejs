@@ -745,9 +745,17 @@
                   </li>
                   <li
                     class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-43">
-                    <a href="#interests" data-tooltip="<%= t('title8') %>">
+                    <a href="#interests" data-tooltip="<%= t('title9') %>">
                       <div style="padding-top: 20px;">
-                      <img alt="Mail" src="/data/images/heart.png" style="width: 35px; height: 35px;">
+                      <img alt="Heart" src="/data/images/heart.png" style="width: 35px; height: 35px;">
+                      </div>
+                    </a>
+                  </li>
+                  <li
+                    class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-43">
+                    <a href="#projects" data-tooltip="<%= t('title8') %>">
+                      <div style="padding-top: 20px;">
+                      <img alt="Heart" src="/data/images/project.png" style="width: 35px; height: 35px;">
                       </div>
                     </a>
                   </li>
@@ -758,7 +766,7 @@
                       <img alt="Mail" src="/data/images/mail.png" style="width: 35px; height: 35px;">
                       </div>
                     </a>
-                  </li>
+                  </li>                  
                 </ul>
               </nav>
             </div>
@@ -801,8 +809,12 @@
                       <dd><a href="mailto:aida@aidavers.com">aida@aidavers.com</a></dd>
                       <dt class="text-upper"><%= t('phone') %></dt>
                       <dd>+34 618 03 55 48</dd>
-                      <dt class="text-upper"><%= t('freelance') %></dt>
-                      <dd><%= t('available') %></dd>
+                      <dt class="text-upper"><%= t('address') %></dt>
+                      <dd><%= t('home') %></dd>
+                      <dt class="text-upper"><%= t('nationality') %></dt>
+                      <dd><%= t('spain') %></dd>
+                      <dt class="text-upper"><%= t('license') %></dt>
+                      <dd><%= t('car') %></dd>
                     </dl>
                   </div>
                   <div class="col-sm-6 clear-mrg">
@@ -977,13 +989,14 @@
                 <div class="education">
                   <div class="education-box">
                     <span class="education-date">
-                      <span>2019 - 2024</span>
+                      <span>2022-2024</span>
                     </span>
                     <h3>
-                      <%= t('teacher') %></h3>
+                      <%= t('proofreader') %></h3>
                       <a href="https://montsedelgado.cat">
-                    <span class="education-company">Montse Delgado, Centre de Reforç Escolar</span></a>
-                  </div>
+                      <span class="education-company">Montse Delgado, Centre de Reforç Escolar</span></a>
+                    </a>
+                  </div>  
                   <div class="education-box">
                     <span class="education-date">
                       <span>2021-2024</span>
@@ -993,49 +1006,21 @@
                       <a href="https://montsedelgado.cat">
                       <span class="education-company">Montse Delgado, Centre de Reforç Escolar</span></a>
                     </a>
-                  </div>
+                  </div>  
                   <div class="education-box">
                     <span class="education-date">
-                      <span>2022-2024</span>
+                      <span>2019 - 2024</span>
                     </span>
                     <h3>
-                      <%= t('proofreader') %></h3>
+                      <%= t('teacher') %></h3>
                       <a href="https://montsedelgado.cat">
-                      <span class="education-company">Montse Delgado, Centre de Reforç Escolar</span></a>
-                    </a>
-                  </div>
-                  <div class="education-box">
-                    <span class="education-date">
-                      <span>2022</span>
-                    </span>
-                    <h3>
-                      <%= t('translator') %> </h3>
-                      <a href="https://github.com/royalmo/itic-copilot">
-                    <span class="education-company"><%= t('itic') %></span></a>
-                  </div>
+                    <span class="education-company">Montse Delgado, Centre de Reforç Escolar</span></a>
+                  </div>    
                 </div>
               </section>
               <section id="timeline" class="section padd-box">
                 <h2 class="title-lg text-upper"><%= t('title7') %></h2>
                 <div class="education">
-                  <div class="education-box">
-                    <span class="education-date">
-                      <span>2017 - 2020</span>
-                    </span>
-                    <h3>
-                      <a href="https://agora.xtec.cat/iesgerbert/">
-                        Institut Gerbert d'Aurillac </a>
-                    </h3>
-                    <a href="https://agora.xtec.cat/iesgerbert/estudis-2/batxibac/">
-                      <span class="education-company"><%= t('batxibac') %></span>
-                    </a>
-                    <div class="at-above-post-homepage addthis_tool"
-                      data-url="https://certy.px-lab.com/designer/certy_timeline/design-university/">
-                    </div>
-                    <div class="at-below-post-homepage addthis_tool"
-                      data-url="https://certy.px-lab.com/designer/certy_timeline/design-university/">
-                    </div>
-                  </div>
                   <div class="education-box">
                     <span class="education-date">
                       <span>2020-2024</span>
@@ -1048,8 +1033,47 @@
                       href="https://www.uab.cat/web/estudiar/ehea-degrees/general-information-1216708259085.html?param1=1228291018508">
                       <span class="education-company"><%= t('degree') %></span>
                     </a>
-                </div>
+                </div>                  
+                  <div class="education-box">
+                    <span class="education-date">
+                      <span>2017 - 2020</span>
+                    </span>
+                    <h3>
+                      <a href="https://agora.xtec.cat/iesgerbert/">
+                        Institut Gerbert d'Aurillac </a>
+                    </h3>
+                    <a href="https://agora.xtec.cat/iesgerbert/estudis-2/batxibac/">
+                      <span class="education-company"><%= t('batxibac') %></span>
+                    </a>                    
+                  </div>
               </section>
+              <br>
+              <section id="projects" class="section padd-box">
+                <h2 class="title-lg text-upper"><%= t('title8') %></h2>
+                <div class="project">
+                  <div class="project">
+                    <h3 class="title-thin text-muted">Itic Copilot Extension</h3>
+                      <p><strong>Description:</strong> Translated the Itic Copilot extension [blah blah].</p>
+                      <p><strong>Technologies Used:</strong> HTML </p>
+                      <p><strong>Languages:</strong> Spanish, English, Catalan, French, Italian</p>
+                      <p><strong>Link:</strong> <a href="https://github.com/royalmo/itic-copilot">Check it out!</a></p>
+                  </div>
+                  <br>
+                  <h3 class="title-thin text-muted">Website Creation and Translation</h3>                  
+                  <p><strong>Description:</strong> Designed, developed, and translated a personal website to showcase translation services and professional skills.</p>
+                  <p><strong>Technologies Used:</strong> HTML, CSS, JavaScript</p>
+                  <p><strong>Languages:</strong> Spanish, English, Catalan, French, Italian</p>
+              </div>
+              <br>
+              <br>              
+              <div class="project">
+                <h3 class="title-thin text-muted">TFG: Literary Translation of a Children's Magazine</h3>
+                  <p><strong>Description:</strong> Completed a final degree project at the Universitat Autònoma de Barcelona, involving the literary translation of a children's magazine from French to Catalan. [blah blah]. </p>
+                  <p><strong>Source Material:</strong> Bayard Children's Magazine (Mes premiers J'aime lire: Drôle de directeur)</p>
+                  <p><strong>Languages:</strong> French to Catalan</p>
+                  <p><strong>Link:</strong> <a href="http://tfgurl.com" target="_blank">Link futur</a></p>
+              </div>
+              </section>              
             </div>
           </div>
         </div>
@@ -1061,7 +1085,7 @@
                 <div class="row">
                   
                   <div class="col-sm-12 clear-mrg">
-                    <h2 class="title-lg text-upper"><%= t('title8') %></h2>
+                    <h2 class="title-lg text-upper"><%= t('title9') %></h2>
                     <ul class="crt-icon-list crt-icon-list-col3 clearfix">
                       <li>
                         <img alt="Book Icon" src="/data/images/book.png">
@@ -1098,14 +1122,14 @@
           <div class="crt-paper clear-mrg clearfix">
             <div class="crt-paper-cont paper-padd clear-mrg">
               <section id="contact" class="section padd-box">
-                <h2 class="title-lg text-upper"><%= t('title9') %></h2>
+                <h2 class="title-lg text-upper"><%= t('title10') %></h2>
                 <div class="padd-box-sm">
                   <header class="contact-head">
                   </header>
                   <h3><%= t('contact') %></h3><br> 
                    <div id="form_ok" style="display:none; border: 1px solid green; background-color: lightgreen; padding:1rem 3rem;">Missatge enviat correctament!</div>             
                    <div id="form_ko" style="display:none; border: 1px solid red; background-color: lightcoral; padding:1rem 3rem;">Ha succeït un error a l'enviar el correu. Torna-ho a intentar i si segueix fallant contacta'm per correu electrònic.</div>  
-                   <form action="/send-email" id="emailForm" method="post">                    
+                   <form action="/send-email" id="emailForm" method="post"> 
                       <div>                       
                         <input type="hidden" name="server.js" value="5">
                        </div>    
@@ -1129,7 +1153,7 @@
                               aria-invalid="false" required></textarea></span> </label></p>
                       <p><input id="send_button" type="submit" value="<%= t('send') %>" class="wpcf7-form-control has-spinner wpcf7-submit"><span
                           class="wpcf7-spinner"></span></p>                      
-                    </form>
+                    </form>                  
                     <!-- Form sending in AJAX -->
                     <script>
                       jQuery(document).ready(function() {
@@ -1154,8 +1178,14 @@
                       });
                   </script>                  
                   </div>
+                  <div class="social-icons" style="text-align: center;">   
+                    <a style="margin-left: 0.15rem;" href="https://www.linkedin.com/in/aida-vers-delgado-a33520241/"><img alt="LinkedIn" src="/data/images/linkedin1.png"></a>
+                    <a style="margin-left: 0.15rem;" href="https://github.com/aidavede/"><img alt="GitHub" src="/data/images/github1.png"></a>         
+                  </div>
                 </div>
-                    <div style="overflow: hidden;"></div>
+
+                </div>               
+                     <div style="overflow: hidden;"></div>
                   </div>
                 </div>
               </section>
@@ -1163,7 +1193,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> 
     <div class="crt-paper-layers crt-animate">
       <div class="crt-paper clear-mrg clearfix">     
       </div>
@@ -1199,7 +1229,7 @@
     <svg id="crtBgShape2" class="hidden-sm hidden-xs" height="536" width="633">
       <polygon points="0,0,633,0,633,536"></polygon>
     </svg>
-  </div>     
+  </div>   
   <script type="text/javascript" id="contact-form-7-js-extra">
     /* <![CDATA[ */
     var wpcf7 = { "api": { "root": "https:\/\/certy.px-lab.com\/designer\/wp-json\/", "namespace": "contact-form-7\/v1" } };
@@ -1211,10 +1241,10 @@
     /* <![CDATA[ */
     var certy_vars_from_WP = { "themeColor": "#b2dcff", "mapStyles": "[\n    {\n        \"featureType\": \"administrative\",\n        \"elementType\": \"all\",\n        \"stylers\": [\n            {\n                \"saturation\": \"-100\"\n            }\n        ]\n    },\n    {\n        \"featureType\": \"administrative.province\",\n        \"elementType\": \"all\",\n        \"stylers\": [\n            {\n                \"visibility\": \"off\"\n            }\n        ]\n    },\n    {\n        \"featureType\": \"landscape\",\n        \"elementType\": \"all\",\n        \"stylers\": [\n            {\n                \"saturation\": -100\n            },\n            {\n                \"lightness\": 65\n            },\n            {\n                \"visibility\": \"on\"\n            }\n        ]\n    },\n    {\n        \"featureType\": \"poi\",\n        \"elementType\": \"all\",\n        \"stylers\": [\n            {\n                \"saturation\": -100\n            },\n            {\n                \"lightness\": \"50\"\n            },\n            {\n                \"visibility\": \"simplified\"\n            }\n        ]\n    },\n    {\n        \"featureType\": \"road\",\n        \"elementType\": \"all\",\n        \"stylers\": [\n            {\n                \"saturation\": \"-100\"\n            }\n        ]\n    },\n    {\n        \"featureType\": \"road.highway\",\n        \"elementType\": \"all\",\n        \"stylers\": [\n            {\n                \"visibility\": \"simplified\"\n            }\n        ]\n    },\n    {\n        \"featureType\": \"road.arterial\",\n        \"elementType\": \"all\",\n        \"stylers\": [\n            {\n                \"lightness\": \"30\"\n            }\n        ]\n    },\n    {\n        \"featureType\": \"road.local\",\n        \"elementType\": \"all\",\n        \"stylers\": [\n            {\n                \"lightness\": \"40\"\n            }\n        ]\n    },\n    {\n        \"featureType\": \"transit\",\n        \"elementType\": \"all\",\n        \"stylers\": [\n            {\n                \"saturation\": -100\n            },\n            {\n                \"visibility\": \"simplified\"\n            }\n        ]\n    },\n    {\n        \"featureType\": \"water\",\n        \"elementType\": \"geometry\",\n        \"stylers\": [\n            {\n                \"hue\": \"#ffff00\"\n            },\n            {\n                \"lightness\": -25\n            },\n            {\n                \"saturation\": -97\n            }\n        ]\n    },\n    {\n        \"featureType\": \"water\",\n        \"elementType\": \"labels\",\n        \"stylers\": [\n            {\n                \"lightness\": -25\n            },\n            {\n                \"saturation\": -100\n            }\n        ]\n    }\n]", "enable_sticky": "1" };
     /* ]]> */
-  </script>
+  </script>   
   <script type="text/javascript" src="/data/theme.min.js.descarga"
     id="certy-main-js-js"></script>
-
+    
 
 </body>
 
