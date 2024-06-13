@@ -25,600 +25,24 @@
 
   <script src="/data/js" data-cfasync="false"
     data-wpfc-render="false" type="text/javascript" async=""></script>     
- 
-  <style id="global-styles-inline-css" type="text/css">
-    body {
-      --wp--preset--color--black: #000000;
-      --wp--preset--color--cyan-bluish-gray: #3190c0;
-      --wp--preset--color--white: #dab0b0;
-      --wp--preset--color--pale-pink: #f78da7;
-      --wp--preset--color--vivid-red: #cf2e2e;
-      --wp--preset--color--luminous-vivid-orange: #ff6900;
-      --wp--preset--color--luminous-vivid-amber: #fcb900;
-      --wp--preset--color--light-green-cyan: #7bdcb5;
-      --wp--preset--color--vivid-green-cyan: #00d084;
-      --wp--preset--color--pale-cyan-blue: #8ed1fc;
-      --wp--preset--color--vivid-cyan-blue: #0693e3;
-      --wp--preset--color--vivid-purple: #9b51e0;
-      --wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg, rgba(6, 147, 227, 1) 0%, rgb(155, 81, 224) 100%);
-      --wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg, rgb(122, 220, 180) 0%, rgb(0, 208, 130) 100%);
-      --wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg, rgba(252, 185, 0, 1) 0%, rgba(255, 105, 0, 1) 100%);
-      --wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg, rgba(255, 105, 0, 1) 0%, rgb(207, 46, 46) 100%);
-      --wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg, rgb(238, 238, 238) 0%, rgb(169, 184, 195) 100%);
-      --wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg, rgb(74, 234, 220) 0%, rgb(151, 120, 209) 20%, rgb(207, 42, 186) 40%, rgb(238, 44, 130) 60%, rgb(251, 105, 98) 80%, rgb(254, 248, 76) 100%);
-      --wp--preset--gradient--blush-light-purple: linear-gradient(135deg, rgb(255, 206, 236) 0%, rgb(152, 150, 240) 100%);
-      --wp--preset--gradient--blush-bordeaux: linear-gradient(135deg, rgb(254, 205, 165) 0%, rgb(254, 45, 45) 50%, rgb(107, 0, 62) 100%);
-      --wp--preset--gradient--luminous-dusk: linear-gradient(135deg, rgb(255, 203, 112) 0%, rgb(199, 81, 192) 50%, rgb(65, 88, 208) 100%);
-      --wp--preset--gradient--pale-ocean: linear-gradient(135deg, rgb(255, 245, 203) 0%, rgb(182, 227, 212) 50%, rgb(51, 167, 181) 100%);
-      --wp--preset--gradient--electric-grass: linear-gradient(135deg, rgb(202, 248, 128) 0%, rgb(113, 206, 126) 100%);
-      --wp--preset--gradient--midnight: linear-gradient(135deg, rgb(2, 3, 129) 0%, rgb(40, 116, 252) 100%);
-      --wp--preset--duotone--dark-grayscale: url('#wp-duotone-dark-grayscale');
-      --wp--preset--duotone--grayscale: url('#wp-duotone-grayscale');
-      --wp--preset--duotone--purple-yellow: url('#wp-duotone-purple-yellow');
-      --wp--preset--duotone--blue-red: url('#wp-duotone-blue-red');
-      --wp--preset--duotone--midnight: url('#wp-duotone-midnight');
-      --wp--preset--duotone--magenta-yellow: url('#wp-duotone-magenta-yellow');
-      --wp--preset--duotone--purple-green: url('#wp-duotone-purple-green');
-      --wp--preset--duotone--blue-orange: url('#wp-duotone-blue-orange');
-      --wp--preset--font-size--small: 13px;
-      --wp--preset--font-size--medium: 20px;
-      --wp--preset--font-size--large: 36px;
-      --wp--preset--font-size--x-large: 42px;
-    }
 
-    .has-black-color {
-      color: var(--wp--preset--color--black) !important;
-    }
-
-    .has-cyan-bluish-gray-color {
-      color: var(--wp--preset--color--cyan-bluish-gray) !important;
-    }
-
-    .has-white-color {
-      color: var(--wp--preset--color--white) !important;
-    }
-
-    .has-pale-pink-color {
-      color: var(--wp--preset--color--pale-pink) !important;
-    }
-
-    .has-vivid-red-color {
-      color: var(--wp--preset--color--vivid-red) !important;
-    }
-
-    .has-luminous-vivid-orange-color {
-      color: var(--wp--preset--color--luminous-vivid-orange) !important;
-    }
-
-    .has-luminous-vivid-amber-color {
-      color: var(--wp--preset--color--luminous-vivid-amber) !important;
-    }
-
-    .has-light-green-cyan-color {
-      color: var(--wp--preset--color--light-green-cyan) !important;
-    }
-
-    .has-vivid-green-cyan-color {
-      color: var(--wp--preset--color--vivid-green-cyan) !important;
-    }
-
-    .has-pale-cyan-blue-color {
-      color: var(--wp--preset--color--pale-cyan-blue) !important;
-    }
-
-    .has-vivid-cyan-blue-color {
-      color: var(--wp--preset--color--vivid-cyan-blue) !important;
-    }
-
-    .has-vivid-purple-color {
-      color: var(--wp--preset--color--vivid-purple) !important;
-    }
-
-    .has-black-background-color {
-      background-color: var(--wp--preset--color--black) !important;
-    }
-
-    .has-cyan-bluish-gray-background-color {
-      background-color: var(--wp--preset--color--cyan-bluish-gray) !important;
-    }
-
-    .has-white-background-color {
-      background-color: var(--wp--preset--color--white) !important;
-    }
-
-    .has-pale-pink-background-color {
-      background-color: var(--wp--preset--color--pale-pink) !important;
-    }
-
-    .has-vivid-red-background-color {
-      background-color: var(--wp--preset--color--vivid-red) !important;
-    }
-
-    .has-luminous-vivid-orange-background-color {
-      background-color: var(--wp--preset--color--luminous-vivid-orange) !important;
-    }
-
-    .has-luminous-vivid-amber-background-color {
-      background-color: var(--wp--preset--color--luminous-vivid-amber) !important;
-    }
-
-    .has-light-green-cyan-background-color {
-      background-color: var(--wp--preset--color--light-green-cyan) !important;
-    }
-
-    .has-vivid-green-cyan-background-color {
-      background-color: var(--wp--preset--color--vivid-green-cyan) !important;
-    }
-
-    .has-pale-cyan-blue-background-color {
-      background-color: var(--wp--preset--color--pale-cyan-blue) !important;
-    }
-
-    .has-vivid-cyan-blue-background-color {
-      background-color: var(--wp--preset--color--vivid-cyan-blue) !important;
-    }
-
-    .has-vivid-purple-background-color {
-      background-color: var(--wp--preset--color--vivid-purple) !important;
-    }
-
-    .has-black-border-color {
-      border-color: var(--wp--preset--color--black) !important;
-    }
-
-    .has-cyan-bluish-gray-border-color {
-      border-color: var(--wp--preset--color--cyan-bluish-gray) !important;
-    }
-
-    .has-white-border-color {
-      border-color: var(--wp--preset--color--white) !important;
-    }
-
-    .has-pale-pink-border-color {
-      border-color: var(--wp--preset--color--pale-pink) !important;
-    }
-
-    .has-vivid-red-border-color {
-      border-color: var(--wp--preset--color--vivid-red) !important;
-    }
-
-    .has-luminous-vivid-orange-border-color {
-      border-color: var(--wp--preset--color--luminous-vivid-orange) !important;
-    }
-
-    .has-luminous-vivid-amber-border-color {
-      border-color: var(--wp--preset--color--luminous-vivid-amber) !important;
-    }
-
-    .has-light-green-cyan-border-color {
-      border-color: var(--wp--preset--color--light-green-cyan) !important;
-    }
-
-    .has-vivid-green-cyan-border-color {
-      border-color: var(--wp--preset--color--vivid-green-cyan) !important;
-    }
-
-    .has-pale-cyan-blue-border-color {
-      border-color: var(--wp--preset--color--pale-cyan-blue) !important;
-    }
-
-    .has-vivid-cyan-blue-border-color {
-      border-color: var(--wp--preset--color--vivid-cyan-blue) !important;
-    }
-
-    .has-vivid-purple-border-color {
-      border-color: var(--wp--preset--color--vivid-purple) !important;
-    }
-
-    .has-vivid-cyan-blue-to-vivid-purple-gradient-background {
-      background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;
-    }
-
-    .has-light-green-cyan-to-vivid-green-cyan-gradient-background {
-      background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;
-    }
-
-    .has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background {
-      background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;
-    }
-
-    .has-luminous-vivid-orange-to-vivid-red-gradient-background {
-      background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;
-    }
-
-    .has-very-light-gray-to-cyan-bluish-gray-gradient-background {
-      background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;
-    }
-
-    .has-cool-to-warm-spectrum-gradient-background {
-      background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;
-    }
-
-    .has-blush-light-purple-gradient-background {
-      background: var(--wp--preset--gradient--blush-light-purple) !important;
-    }
-
-    .has-blush-bordeaux-gradient-background {
-      background: var(--wp--preset--gradient--blush-bordeaux) !important;
-    }
-
-    .has-luminous-dusk-gradient-background {
-      background: var(--wp--preset--gradient--luminous-dusk) !important;
-    }
-
-    .has-pale-ocean-gradient-background {
-      background: var(--wp--preset--gradient--pale-ocean) !important;
-    }
-
-    .has-electric-grass-gradient-background {
-      background: var(--wp--preset--gradient--electric-grass) !important;
-    }
-
-    .has-midnight-gradient-background {
-      background: var(--wp--preset--gradient--midnight) !important;
-    }
-
-    .has-small-font-size {
-      font-size: var(--wp--preset--font-size--small) !important;
-    }
-
-    .has-medium-font-size {
-      font-size: var(--wp--preset--font-size--medium) !important;
-    }
-
-    .has-large-font-size {
-      font-size: var(--wp--preset--font-size--large) !important;
-    }
-
-    .has-x-large-font-size {
-      font-size: var(--wp--preset--font-size--x-large) !important;
-    }
-  </style>
   <link rel="stylesheet" id="Quicksand-css" href="/data/css1.css"
     type="text/css" media="all">
   <link rel="stylesheet" id="Pacifico-css" href="/data/css2.css"
     type="text/css" media="all">
   <link rel="stylesheet" id="certy-styles-css"
     href="/data/style(1).min.css" type="text/css" media="all">
+  <link rel="stylesheet" id="certy-styles-css"
+    href="/data/css3.css" type="text/css" media="all">
   <script type="text/javascript" src="/data/jquery.min.js"
     id="jquery-core-js"></script>
   <script type="text/javascript"
     src="/data/modernizr-3.3.1.min.js.descarga"
     id="certy-Modernizer-js-js"></script>
-  <link rel="https://api.w.org/" href="https://certy.px-lab.com/designer/wp-json/">
-  <link rel="alternate" type="application/json" href="https://certy.px-lab.com/designer/wp-json/wp/v2/pages/5">
-  <link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://certy.px-lab.com/designer/xmlrpc.php?rsd">
-  <link rel="wlwmanifest" type="application/wlwmanifest+xml"
-    href="https://certy.px-lab.com/designer/wp-includes/wlwmanifest.xml">
   <meta name="generator" content="WordPress 5.9.9">
   <link rel="canonical" href="https://aidavers.com">
   <link rel="shortlink" href="https://aidavers.com">
-  <link rel="alternate" type="application/json+oembed"
-    href="https://certy.px-lab.com/designer/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fcerty.px-lab.com%2Fdesigner%2F">
-  <link rel="alternate" type="text/xml+oembed"
-    href="https://certy.px-lab.com/designer/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fcerty.px-lab.com%2Fdesigner%2F&amp;format=xml">
-  <style type="text/css">
-    body {
-      font-family: 'Quicksand', sans-serif;
-    }
 
-    .crt-logo {
-      font-family: 'Pacifico', handwriting;
-    }
-
-    .text-primary,
-    .crt-icon-list .crt-icon,
-    .post-title a:hover,
-    .crt-nav .menu-item-object-post.current-menu-item a,
-    .crt-nav .menu-item-object-page.current-menu-item a,
-    .crt-nav .menu-item-object-category.current-menu-item a,
-
-    .fc-state-active,
-    .fc-state-active .fc-button-inner {
-      color: #b2dcff;
-    }
-
-    mark,
-    input[type='submit'],
-    .bg-primary,
-    .btn-primary,
-    .bg-primary.text-dropcup-sq,
-    .raiting-circle .fill,
-    .progress-bullets .bullet.fill,
-    .tabs .tabs-menu li.active a,
-    .tabs .tabs-menu li a:hover,
-    .togglebox-header:before,
-    .accordion-header:before,
-    .education:before,
-    .education-date,
-    .widget_calendar tbody a,
-    #crtMainNav .sub-menu li>a:hover,
-    #crtMainNav .sub-menu .current-menu-item>a,
-    #crtMainNavSm .sub-menu:before,
-
-    .apcal_btn-primary,
-    .apcal_btn-primary:hover,
-    #buttonbox .apcal_btn-success,
-    #buttonbox .apcal_btn-success:hover,
-    .apcal_alert-info {
-      background-color: #b2dcff;
-    }
-
-    .btn-bordered,
-    .brd-primary,
-    #crtNavSm .current a,
-    #crtNavSm .menu-item-object-post.current-menu-item a,
-    #crtNavSm .menu-item-object-page.current-menu-item a,
-    #crtNavSm .menu-item-object-category.current-menu-item a,
-    .progress-bullets .bullet,
-    .education-date:after,
-    .education-date:before,
-
-    .apcal_modal-body .apcal_alert-info {
-      border-color: #e7c0da;
-    }
-
-    ::-moz-selection {
-      background-color: #e7c0da;
-    }
-
-    ::selection {
-      background-color: #e7c0da;
-    }
-
-    .crt-card,
-    .btn-primary,
-    input[type='submit'],
-    .education-date,
-
-    .apcal_btn-primary,
-    .apcal_btn-primary:hover,
-    #buttonbox .apcal_btn-success,
-    #buttonbox .apcal_btn-success:hover,
-    .apcal_alert-info,
-    .tabs .tabs-menu li.active a,
-    .tabs .tabs-menu li a:hover,
-    .accordion-header,
-    .togglebox-header {
-      color: #010101;
-    }
-
-    ::-moz-selection {
-      color: #010101;
-    }
-
-    ::selection {
-      color: #010101;
-    }
-
-    .bg-primary .btn-bordered {
-      border-color: #010101;
-      color: #010101;
-    }
-
-    body,
-    blockquote.quote-top:before,
-    blockquote.quote-side:before,
-    .form-item,
-    .crt-logo,
-    .page-numbers:hover,
-    .page-numbers.current,
-    .tabs .tabs-menu a,
-    .crt-nav a,
-    .crt-tooltip,
-    #crtMainNav .sub-menu a,
-    #crtMainNav>ul>li>a:hover,
-    #crtMainNav>ul>li.current-menu-item>a,
-    #crtMainNav>ul>li.current-menu-parent>a,
-    #crtMainNavSm li>a:hover,
-    #crtMainNavSm li.current-menu-item a,
-    #crtMainNavSm li.current-menu-parent a,
-    .accordion li.active .accordion-header,
-    .accordion-header:hover,
-    .togglebox li.active .togglebox-header,
-    .togglebox-header:hover,
-    .pf-filter button,
-    .search-title span,
-    .widget_archive a,
-    .widget_categories a {
-      color: #010101;
-    }
-
-    ::-webkit-input-placeholder {
-      color: #010101;
-    }
-
-    ::-moz-placeholder {
-      color: #010101;
-    }
-
-    :-ms-input-placeholder {
-      color: #010101;
-    }
-
-    :-moz-placeholder {
-      color: #010101;
-    }
-
-    .text-dropcup-sq,
-    .styled-ul li:before,
-    .education-box:before {
-      background-color: #010101;
-    }
-
-    .text-muted,
-    .post-content,
-    .page-numbers,
-    .education-company,
-    .ref-author span,
-    table>thead>tr>th,
-    .styled-ul>li>ul ul,
-    #crtMainNav>ul>li>a,
-    #crtMainNavSm a,
-    .cr-carousel .slick-next:before,
-    .cr-carousel .slick-prev:before,
-    .widget-title,
-    .widget_archive li,
-    .widget_categories li,
-    .widget_recent_entries .post-date,
-    .post-category-comment a,
-
-    #timesloatbox,
-    .apcal_modal-info .icon-remove {
-      color: #757575;
-    }
-
-    .styled-ul>li>ul ul li:before {
-      background-color: #757575;
-    }
-
-    hr,
-    th,
-    td,
-    blockquote,
-    .brd-btm,
-    .post-tags a,
-    .reference-box,
-    .crt-head-inner,
-    .crt-paper,
-    .crt-paper-layers:after,
-    .crt-paper-layers:before,
-    #comments .comment-list,
-    #comments .comment-body,
-    .crt-nav-type1 .crt-nav-cont,
-    .tabs .tabs-menu,
-    .tabs-vertical:before,
-    .page-category .post-footer,
-    .search-for,
-    .widget_meta>ul,
-    .widget_pages>ul,
-    .widget_archive>ul,
-    .widget_nav_menu .menu,
-    .widget_categories>ul,
-    .widget_recent_entries>ul,
-    .widget_recent_comments>ul,
-    .widget_meta li,
-    .widget_pages li,
-    .widget_archive li,
-    .widget_nav_menu li,
-    .widget_categories li,
-    .widget_recent_entries li,
-    .widget_recent_comments li,
-    .widget_calendar caption,
-    .widget_tag_cloud a,
-    .post-category-comment a,
-
-    .apcal_modal,
-    .apcal_btn#next1,
-    .apcal_btn#back {
-      border-color: #e1e1e1;
-    }
-
-    .crt-nav-btm:after {
-      background-color: #e1e1e1;
-    }
-
-    .post-line {
-      color: #e1e1e1;
-    }
-
-    #crtBgShape1 polygon {
-      fill: #d0cece;
-    }
-
-    #crtBgShape2 polygon {
-      fill: #b2dcff;
-    }
-
-    body,
-    select,
-    textarea,
-    input[type='url'],
-    input[type='tel'],
-    input[type='time'],
-    input[type='text'],
-    input[type='email'],
-    input[type='number'],
-    input[type='search'],
-    input[type='password'],
-    input[type='week'],
-    input[type='date'],
-    input[type='datetime'],
-    input[type='datetime-local'],
-    input[type='month'],
-    .form-item,
-    .widget_search input[type="text"],
-
-    .fc-state-highlight {
-      background-color: #e9e6e6;
-    }
-
-    .text-dropcup-sq {
-      color: #fff;
-    }
-
-    .crt-head-inner,
-    .crt-card-footer,
-    blockquote.quote-top:before,
-    blockquote.quote-side:before,
-    .tooltip:after,
-    .education-box:last-child:after,
-    .crt-nav-type1 .crt-nav-cont,
-    #crtMainNav .sub-menu,
-    .crt-tooltip:after,
-    #crtSidebar,
-    .pf-popup-content,
-    .cr-carousel .slick-next,
-    .cr-carousel .slick-prev,
-    .crt-side-box-1,
-    .crt-side-box-2,
-    .crt-side-box-2 .widget,
-    #crtContainer,
-    .crt-paper,
-    .crt-paper-layers:after,
-    .crt-paper-layers:before,
-    #crtSidebarBtn,
-    #crtSidebarClose,
-    .crt-side-box-1 #sticky-widget-inner {
-      background-color: #fff;
-    }
-
-    .tooltip:before {
-      border-top-color: #fff;
-    }
-
-    .crt-nav-type1 .crt-nav-btm,
-    .crt-tooltip.arrow-right:before {
-      border-left-color: #fff;
-    }
-
-    .crt-tooltip.arrow-left:before {
-      border-right-color: #fff;
-    }
-
-    .btn-default {
-      background-color: #b2dcff;
-    }
-
-    .btn-default {
-      color: #010101;
-    }
-
-    .btn-secondary {
-      background-color: #041f28;
-    }
-
-    .btn-secondary {
-      color: #fff;
-    }
-  </style>
-  <style type="text/css">
-    .recentcomments a {
-      display: inline !important;
-      padding: 0 !important;
-      margin: 0 !important;
-    }
-  </style>
   <script data-cfasync="false" type="text/javascript">if (window.addthis_product === undefined) { window.addthis_product = "wpp"; } if (window.wp_product_version === undefined) { window.wp_product_version = "wpp-6.2.6"; } if (window.addthis_share === undefined) { window.addthis_share = {}; } if (window.addthis_config === undefined) { window.addthis_config = { "data_track_clickback": true, "ui_atversion": 300 }; } if (window.addthis_plugin_info === undefined) { window.addthis_plugin_info = { "info_status": "enabled", "cms_name": "WordPress", "plugin_name": "Share Buttons by AddThis", "plugin_version": "6.2.6", "plugin_mode": "AddThis", "anonymous_profile_id": "wp-398b69e50d7db6ad5ecb68327da2dda4", "page_info": { "template": "home", "post_type": "" }, "sharing_enabled_on_post_via_metabox": false }; }
     (function () {
       var first_load_interval_id = setInterval(function () {
@@ -682,23 +106,6 @@
           </div>
         </div>
       </div>
-      <!-- <nav id="crtNavSm" class="crt-nav hidden-lg hidden-md">
-        <div class="crt-avatar">
-          <a href="#about" data-tooltip="About me">
-            <img alt="" src="/data/images/orla_square.jpg" class="avatar avatar-42"> </a>
-        </div>
-        <ul class="clear-list">
-          <li id="menu-item-41"
-            class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-41">
-            <a href="#exp" data-tooltip="Experience"><span
-                class="crt-icon crt-icon-experience"></span></a>
-          <li id="menu-item-43"
-            class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-43">
-            <a href="#contact" data-tooltip="Contact"><span
-                class="crt-icon crt-icon-contact"></span></a>
-          </li>
-        </ul>
-      </nav> -->
     </header>
     <div id="crtContainer" class="crt-container">
       <div id="crtSideBoxWrap">
@@ -738,7 +145,7 @@
                   <li
                     class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-41">
                     <a href="#exp" data-tooltip="<%= t('exp') %>">
-                     <div style="padding-top: 20px;">
+                     <div>
                       <img alt="Briefcase" src="/data/images/briefcase.png" style="width: 35px; height: 35px;">
                     </div>
                     </a>
@@ -746,7 +153,7 @@
                   <li
                     class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-43">
                     <a href="#interests" data-tooltip="<%= t('title9') %>">
-                      <div style="padding-top: 20px;">
+                      <div>
                       <img alt="Heart" src="/data/images/heart.png" style="width: 35px; height: 35px;">
                       </div>
                     </a>
@@ -754,7 +161,7 @@
                   <li
                     class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-43">
                     <a href="#projects" data-tooltip="<%= t('title8') %>">
-                      <div style="padding-top: 20px;">
+                      <div>
                       <img alt="Heart" src="/data/images/project.png" style="width: 35px; height: 35px;">
                       </div>
                     </a>
@@ -762,7 +169,7 @@
                   <li
                     class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-43">
                     <a href="#contact" data-tooltip="<%= t('cntc') %>">
-                      <div style="padding-top: 20px;">
+                      <div>
                       <img alt="Mail" src="/data/images/mail.png" style="width: 35px; height: 35px;">
                       </div>
                     </a>
@@ -787,9 +194,6 @@
                     <h2 class="title-lg text-upper"> <%= t('greeting') %></h2>
                     <p><%= t('introduction') %></p>
                     <div class="share-box text-left clearfix">
-                      <!--<button class="share-btn btn btn-bordered btn-upper">
-                        <span class="crt-icon crt-icon-share"></span>Share
-                      </button>-->
                       <div class="addthis_inline_share_toolbox"></div>
                     </div>
                     <p>&nbsp;</p>
@@ -1018,7 +422,7 @@
                   </div>    
                 </div>
               </section>
-              <section id="timeline" class="section padd-box">
+              <section id="timeline" class="section padd-box brd-btm">
                 <h2 class="title-lg text-upper"><%= t('title7') %></h2>
                 <div class="education">
                   <div class="education-box">
@@ -1052,7 +456,7 @@
                 <h2 class="title-lg text-upper"><%= t('title8') %></h2>
                 <div class="project">
                   <div class="project">
-                    <h3 class="title-thin text-muted">Itic Copilot Extension</h3>
+                    <h3 class="title-thin text-muted"><%= t('itic') %></h3>
                       <p><strong>Description:</strong> Translated the Itic Copilot extension [blah blah].</p>
                       <p><strong>Technologies Used:</strong> HTML </p>
                       <p><strong>Languages:</strong> Spanish, English, Catalan, French, Italian</p>
@@ -1129,25 +533,22 @@
                   <h3><%= t('contact') %></h3><br> 
                    <div id="form_ok" style="display:none; border: 1px solid green; background-color: lightgreen; padding:1rem 3rem;">Missatge enviat correctament!</div>             
                    <div id="form_ko" style="display:none; border: 1px solid red; background-color: lightcoral; padding:1rem 3rem;">Ha succeït un error a l'enviar el correu. Torna-ho a intentar i si segueix fallant contacta'm per correu electrònic.</div>  
-                   <form action="/send-email" id="emailForm" method="post"> 
-                      <div>                       
-                        <input type="hidden" name="server.js" value="5">
-                       </div>    
-                       <p><label for="Name"> <%= t('name') %><br>
-                        <span class="wpcf7-form-control-wrap your-name"><input type="text" id="name" name="name"
+                   <form action="" id="emailForm" method="post">   
+                       <p><label> <%= t('name') %><br>
+                        <span class="wpcf7-form-control-wrap your-name"><input type="text" id="name" name="name" autocomplete="on"
                             value="" size="40"                            
                             aria-required="true" aria-invalid="false" required></span> </label>
                     </p>                  
-                      <p><label for="Email"> <%= t('email') %><br>
-                          <span class="wpcf7-form-control-wrap your-email"><input type="email" id="email" name="email"
+                      <p><label> <%= t('email') %><br>
+                          <span class="wpcf7-form-control-wrap your-email"><input type="email" id="email" name="email" autocomplete="on"
                               value="" size="40"                            
                               aria-required="true" aria-invalid="false" required></span> </label>
                       </p>
-                      <p><label for="Subject"> <%= t('subject') %><br>
+                      <p><label> <%= t('subject') %><br>
                           <span class="wpcf7-form-control-wrap your-subject"><input type="text" id="subject" name="subject"
                               value="" size="40" class="wpcf7-form-control wpcf7-text" aria-invalid="false" required></span>
                         </label></p>
-                      <p><label for="Message"><%= t('message') %><br>
+                      <p><label><%= t('message') %><br>
                           <span class="wpcf7-form-control-wrap your-message"><textarea id="message" name="message" cols="40"
                               rows="10" class="wpcf7-form-control wpcf7-textarea"
                               aria-invalid="false" required></textarea></span> </label></p>
@@ -1162,7 +563,7 @@
                               sendbutton = jQuery('#send_button');
                               sendbutton.prop("disabled",true).text('Enviant ...');              
                               jQuery.ajax({
-                                  url: jQuery(this).attr('action'),
+                                  url: '/send-email',
                                   type: 'POST',
                                   data: jQuery(this).serialize(),
                                   success: function(response, textStatus, jqXHR) {
