@@ -75,6 +75,21 @@
     "exp": "Experience",
     "cntc": "Contact",
     "send": "Send",
+    "message/sent_ok": "Message sent successfully!",
+    "message/sent_ko": "An error occurred while sending the message. Please try again and if it still fails, contact me by email.",
     "language": "Language",
-    "error": "Error"
+    "error": "Error",
+    
+    "orla": "Me",
+    "briefcase": "Briefcase",
+    "list": "List",
+    "heart": "Heart",
+    "site": "Website",
+    "magazine": "Magazine",
+    "book": "Book icon",
+    "notes": "Notes icon",
+    "gaming": "Game console icon",
+    "cat": "Cat icon",
+    "plane": "Plane icon",
+    "theatre/icon": "Theatre icon"
 }

@@ -117,7 +117,7 @@
                     <span class="crt-avatar-state1">
                       <picture>
                         <source srcset="/data/images/orla_square.jpg" media="(max-width: 991px)">
-                        <img class="avatar avatar-12" id="orla_pic" alt="Aida" src="/data/images/orla.jpg">
+                        <img class="avatar avatar-12" id="<%= t('orla') %>" alt="Aida" src="/data/images/orla.jpg">
                       </picture>                      
                     </span>
                   </span>
@@ -139,14 +139,14 @@
               <nav id="crtNav" class="crt-nav">
                 <div class="crt-nav-img current">
                   <a href="#about" data-tooltip="<%= t('about') %>">
-                    <img alt="" src="/data/images/orla_square.jpg" class="avatar avatar-50"> </a>
+                    <img alt="<%= t('orla') %>" src="/data/images/orla_square.jpg" class="avatar avatar-50"> </a>
                 </div>
                 <ul class="clear-list">
                   <li
                     class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-41">
                     <a href="#exp" data-tooltip="<%= t('exp') %>">
                      <div>
-                      <img alt="Briefcase" src="/data/images/briefcase.png" style="width: 35px; height: 35px;">
+                      <img alt="<%= t('briefcase') %>" src="/data/images/briefcase.png" style="width: 35px; height: 35px;">
                     </div>
                     </a>
                   </li>
@@ -155,7 +155,7 @@
                     class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-43">
                     <a href="#projects" data-tooltip="<%= t('title/projects') %>">
                       <div>
-                      <img alt="List" src="/data/images/project.png" style="width: 35px; height: 35px;">
+                      <img alt="<%= t('list') %>" src="/data/images/project.png" style="width: 35px; height: 35px;">
                       </div>
                     </a>
                   </li>
@@ -163,7 +163,7 @@
                     class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-43">
                     <a href="#interests" data-tooltip="<%= t('title/interests') %>">
                       <div>
-                      <img alt="Heart" src="/data/images/heart.png" style="width: 35px; height: 35px;">
+                      <img alt="<%= t('heart') %>" src="/data/images/heart.png" style="width: 35px; height: 35px;">
                       </div>
                     </a>
                   </li>
@@ -171,7 +171,7 @@
                     class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-43">
                     <a href="#contact" data-tooltip="<%= t('cntc') %>">
                       <div>
-                      <img alt="Mail" src="/data/images/mail.png" style="width: 35px; height: 35px;">
+                      <img alt="<%= t('email') %>" src="/data/images/mail.png" style="width: 35px; height: 35px;">
                       </div>
                     </a>
                   </li>                  
@@ -459,7 +459,7 @@
                   <div class="project">
                     <div class="ref-box brd-btm">                      
                     <h3 class="title-thin text-muted"><%= t('itic') %></h3>
-                    <img alt="iTic" src="/data/images/itic.jpg" style="width: 9rem; height: 15rem;"><br><br>
+                    <img alt="<%= t('itic') %>" src="/data/images/itic.jpg" style="width: 9rem; height: 15rem;"><br><br>
                       <p><strong><%= t('description') %>:</strong> <%= t('itic/description') %></p>
                       <p><strong><%= t('technologies') %>:</strong> HTML </p>
                       <p><strong><%= t('lang') %>:</strong> <%= t('catalan') %>, <%= t('spanish') %>, <%= t('english') %>, <%= t('french') %>, <%= t('italian') %></p>
@@ -469,7 +469,7 @@
                   <br>
                   <div class="ref-box brd-btm">
                   <h3 class="title-thin text-muted"><%= t('website') %></h3>        
-                  <img alt="Website" src="/data/images/language.jpg" style="width: 8rem; height: 3rem;"><br><br>          
+                  <img alt="<%= t('site') %>" src="/data/images/language.jpg" style="width: 8rem; height: 3rem;"><br><br>          
                   <p><strong><%= t('description') %>: </strong><%= t('website/description') %></p>
                   <p><strong><%= t('technologies') %>:</strong> HTML, CSS, JavaScript</p>
                   <p><strong><%= t('lang') %>:</strong> <%= t('catalan') %>, <%= t('spanish') %>, <%= t('english') %>, <%= t('french') %>, <%= t('italian') %></p>
@@ -478,7 +478,7 @@
               <br>              
               <div class="ref-box">
                 <h3 class="title-thin text-muted"><%= t('tfg') %></h3>
-                <img alt="Magazine" src="/data/images/bayard.jpg" style="width: 9,5rem; height: 14rem;"><br><br>
+                <img alt="<%= t('magazine') %>" src="/data/images/bayard.jpg" style="width: 9,5rem; height: 14rem;"><br><br>
                   <p><strong><%= t('description') %>:</strong> <%= t('tfg/description') %></p>
                   <p><strong><%= t('source') %>:</strong> "Mes premiers J'aime lire: Drôle de directeur!", Bayard.</p>
                   <p><strong><%= t('lang') %>:</strong> <%= t('french/catalan') %></p>
@@ -499,27 +499,27 @@
                     <h2 class="title-lg text-upper"><%= t('title/interests') %></h2>
                     <ul class="crt-icon-list crt-icon-list-col3 clearfix">
                       <li>
-                        <img alt="Book Icon" src="/data/images/book.png">
+                        <img alt="<%= t('book') %>" src="/data/images/book.png">
                         <%= t('reading') %>
                       </li>
                       <li>
-                        <img alt="Notes Icon" src="/data/images/music.png">
+                        <img alt="<%= t('notes') %>" src="/data/images/music.png">
                         <%= t('music') %>
                       </li>
                       <li>
-                        <img alt="Game console Icon" src="/data/images/game.png">
+                        <img alt="<%= t('gaming') %>" src="/data/images/game.png">
                         <%= t('games') %>
                       </li>
                       <li>
-                        <img alt="Cat Icon" src="/data/images/cat.png">
+                        <img alt="<%= t('cat') %>" src="/data/images/cat.png">
                         <%= t('cats') %>
                       </li>
                       <li>
-                        <img alt="Plane Icon" src="/data/images/plane.png">
+                        <img alt="<%= t('plane') %>" src="/data/images/plane.png">
                         <%= t('travel') %>
                       </li>
                       <li>
-                        <img alt="Theatre Icon" src="/data/images/theatre.png">
+                        <img alt="<%= t('theatre/icon') %>" src="/data/images/theatre.png">
                         <%= t('theatre') %>
                       </li>
                     </ul>
@@ -538,8 +538,8 @@
                   <header class="contact-head">
                   </header>
                   <h3><%= t('contact') %></h3><br> 
-                   <div id="form_ok" style="display:none; border: 1px solid green; background-color: lightgreen; padding:1rem 3rem;">Missatge enviat correctament!</div>             
-                   <div id="form_ko" style="display:none; border: 1px solid red; background-color: lightcoral; padding:1rem 3rem;">Ha succeït un error a l'enviar el correu. Torna-ho a intentar i si segueix fallant contacta'm per correu electrònic.</div>  
+                   <div id="form_ok" style="display:none; border: 1px solid green; background-color: lightgreen; padding:1rem 3rem;"><%= t('message/sent_ok') %></div>             
+                   <div id="form_ko" style="display:none; border: 1px solid red; background-color: lightcoral; padding:1rem 3rem;"><%= t('message/sent_ko') %></div>  
                    <form action="" id="emailForm" method="post">   
                        <p><label> <%= t('name') %><br>
                         <span class="wpcf7-form-control-wrap your-name"><input type="text" id="name" name="name" autocomplete="on"
@@ -589,7 +589,7 @@
                   <div class="social-icons" style="text-align: center;">   
                     <a style="margin-left: 0.15rem;" href="https://www.linkedin.com/in/aida-vers-delgado-a33520241/"><img alt="LinkedIn" src="/data/images/linkedin.png"></a>
                     <a style="margin-left: 0.15rem;" href="https://github.com/aidavede/"><img alt="GitHub" src="/data/images/github.png"></a>
-                    <a style="margin-left: 0.15rem;" href="mailto:aida@aidavers.com"><img alt="Mail" src="/data/images/email.png"></a>         
+                    <a style="margin-left: 0.15rem;" href="mailto:aida@aidavers.com"><img alt="<%= t('mail') %>" src="/data/images/email.png"></a>         
                   </div>
                 </div>
 

@@ -75,6 +75,21 @@
     "exp": "Experiència",
     "cntc": "Contacte",
     "send": "Enviar",
+    "message/sent_ok": "El missatge s'ha enviat correctament!",
+    "message/sent_ko": "S'ha produït un error en enviar el missatge. Torna-ho a provar i, si segueix fallant, contacta'm per correu electrònic.",
     "language": "Idioma",
-    "error": "Error"
+    "error": "Error",
+    
+    "orla": "Jo",
+    "briefcase": "Maletí",
+    "list": "Llista",
+    "heart": "Cor",
+    "site": "Pagina web",
+    "magazine": "Revista",
+    "book": "Icona llibre",
+    "notes": "Icona bloc de notes",
+    "gaming": "Icona consola",
+    "cat": "Cat icon",
+    "plane": "Icona avió",
+    "theatre/icon": "Icona teatre"
 }

@@ -75,6 +75,21 @@
     "exp": "Experiencia",
     "cntc": "Contacto",
     "send": "Enviar",
+    "message/sent_ok": "¡El mensaje se ha enviado correctamente!",
+    "message/sent_ko": "Se ha producido un error al enviar el mensaje. Vuelve a intentarlo y si sigue fallando, contáctame por correo electrónico.",
     "language": "Idioma",
-    "error": "Error"
+    "error": "Error",
+    
+    "orla": "Yo",
+    "briefcase": "Maletín",
+    "list": "Lista",
+    "heart": "Cor",
+    "site": "Página web",
+    "magazine": "Revista",
+    "book": "Icono libro",
+    "notes": "Icono bloc de notas",
+    "gaming": "Icono consola",
+    "cat": "Icono gato",
+    "plane": "Icono avión",
+    "theatre/icon": "Icono teatro"
 }
