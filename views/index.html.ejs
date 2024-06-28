@@ -161,14 +161,6 @@
                   </li>
                   <li
                     class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-43">
-                    <a href="#interests" data-tooltip="<%= t('title/interests') %>">
-                      <div>
-                      <img alt="<%= t('heart') %>" src="/data/images/heart.png" style="width: 35px; height: 35px;">
-                      </div>
-                    </a>
-                  </li>
-                  <li
-                    class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-43">
                     <a href="#contact" data-tooltip="<%= t('cntc') %>">
                       <div>
                       <img alt="<%= t('email') %>" src="/data/images/mail.png" style="width: 35px; height: 35px;">
@@ -311,7 +303,6 @@
                     </div>
                   </div>
                 </div>
-
               </section>
               <section id="skills" class="section padd-box brd-btm">
                 <div class="row">
@@ -369,23 +360,54 @@
                   </div>
                 </div>
               </section>
-              <section id="data" class="section padd-box">
-                <div class="row">
-                  <div class="col-sm-6 clear-mrg">
-                    <h3 class="title-thin text-muted"><%= t('title/main-strengths') %></h3>
-                    <ul class="styled-list clear-mrg">
-                      <li><%= t('services') %></li>
-                      <li><%= t('specialization') %></li>
-                      <li><%= t('skills') %></li>
-                      <li><%= t('motivation') %></li>
-                      <li><%= t('quality') %></li>
-                    </ul>
-                  </div>
-                </div>
-              </section>
-            </div>
-          </div>
-        </div>
+
+                <section id="data" class="section padd-box">
+                  <div class="row">
+                    <div class="col-sm-6 clear-mrg">
+                      <h3 class="title-thin text-muted"><%= t('title/main-strengths') %></h3>
+                      <ul class="styled-list clear-mrg">
+                        <li><%= t('services') %></li>
+                        <li><%= t('specialization') %></li>
+                        <li><%= t('skills') %></li>
+                        <li><%= t('motivation') %></li>
+                        <li><%= t('quality') %></li>
+                      </ul>
+                    </div>
+
+                <div class="col-sm-6 clear-mrg">
+                  <h3 class="title-thin text-muted"><%= t('title/interests') %></h3>
+                  <ul class="crt-icon-list crt-icon-list-col3 clearfix">
+                    <li>
+                      <img alt="<%= t('book') %>" src="/data/images/book.png">
+                      <%= t('reading') %>
+                    </li>
+                    <li>
+                      <img alt="<%= t('notes') %>" src="/data/images/music.png">
+                      <%= t('music') %>
+                    </li>
+                    <li>
+                      <img alt="<%= t('gaming') %>" src="/data/images/game.png">
+                      <%= t('games') %>
+                    </li>
+                    <li>
+                      <img alt="<%= t('cat') %>" src="/data/images/cat.png">
+                      <%= t('cats') %>
+                    </li>
+                    <li>
+                      <img alt="<%= t('plane') %>" src="/data/images/plane.png">
+                      <%= t('travel') %>
+                    </li>
+                    <li>
+                      <img alt="<%= t('theatre/icon') %>" src="/data/images/theatre.png">
+                      <%= t('theatre') %>
+                    </li>
+                  </ul>
+              </div>
+            </section>
+       </div>
+      </div>
+    </div>
+
         <div class="crt-paper-layers crt-animate">
           <div class="crt-paper clear-mrg clearfix">
             <div class="crt-paper-cont paper-padd clear-mrg">
@@ -480,19 +502,18 @@
                   <p><strong><%= t('description') %>:</strong> <%= t('tfg/description') %></p>
                   <p><strong><%= t('source') %>:</strong> "Mes premiers J'aime lire: Drôle de directeur!", Bayard.</p>
                   <p><strong><%= t('lang') %>:</strong> <%= t('french/catalan') %></p>
-                  <p><strong><%= t('link') %>:</strong> <a href="http://tfgurl.com" target="_blank">Not available (yet)</a></p>
+                 <!-- <p><strong><%= t('link') %>:</strong> <a href="http://tfgurl.com" target="_blank">Not available (yet)</a></p> -->
               </div>
               </section>              
             </div>
           </div>
         </div>
      
-        <div class="crt-paper-layers crt-animate">
+        <!--<div class="crt-paper-layers crt-animate">
           <div class="crt-paper clear-mrg clearfix">
             <div class="crt-paper-cont paper-padd clear-mrg">
               <section id="interests" class="section padd-box">
                 <div class="row">
-                  
                   <div class="col-sm-12 clear-mrg">
                     <h2 class="title-lg text-upper"><%= t('title/interests') %></h2>
                     <ul class="crt-icon-list crt-icon-list-col3 clearfix">
@@ -526,7 +547,8 @@
               </section>
             </div>
           </div>
-        </div>
+        </div> -->
+
         <div class="crt-paper-layers crt-animate">
           <div class="crt-paper clear-mrg clearfix">
             <div class="crt-paper-cont paper-padd clear-mrg">
