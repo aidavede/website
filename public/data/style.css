@@ -117,3 +117,19 @@
 .lang-menu.click ul {
     display: block;
 }
+
+.icon-list {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    padding: 0;
+}
+
+.icon-list li {
+    text-align: center;
+    padding:.35em 0 .35em 0.5em;
+    width: 33%;
+    min-width: 100px;
+    list-style: none;
+    display: block;
+}
